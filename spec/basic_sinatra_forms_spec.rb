@@ -75,7 +75,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:c, :with => "Avi")
-      click_button "Submit"
+      click_button "submit"
 
       expect(page).to have_text("Center: Avi")
     end
