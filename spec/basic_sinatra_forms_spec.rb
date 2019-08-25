@@ -39,7 +39,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:coach, :with => "Walter")
-      click_button "Submit"
+      click_button "submit"
 
       expect(page).to have_text("Coach: Walter")
     end
