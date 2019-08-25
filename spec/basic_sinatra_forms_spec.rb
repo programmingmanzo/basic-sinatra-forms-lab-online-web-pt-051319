@@ -57,7 +57,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:pf, :with => "Danny")
-      click_button "Submit"
+      click_button "submit"
 
       expect(page).to have_text("Power Forward: Danny")
     end
