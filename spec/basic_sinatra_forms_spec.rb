@@ -66,7 +66,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:sg, :with => "Joe")
-      click_button "Submit"
+      click_button "submit"
 
       expect(page).to have_text("Shooting Guard: Joe")
     end
